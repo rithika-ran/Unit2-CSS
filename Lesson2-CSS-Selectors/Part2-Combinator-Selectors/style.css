@@ -36,9 +36,11 @@ body {
 .post-footer a {
    text-decoration: none ;
    color: #e3854b;
-   :hover 
-   
 }
+.post-footer a:hover {
+   color: #174b22;
+}
+
 
 /* ==========================================
    CHILD SELECTOR CHALLENGES
@@ -59,7 +61,14 @@ body {
    - Add specific styling to the first-level list items
    Hint: Use child selector (>)
 */
-.sidebar > 
+.sidebar > div   {text-align:left;
+   font-style: italic;
+   color: rgb(7, 105, 52);
+   border-bottom:2px solid #e3854b;
+  border-top: 2px solid #e3854b;
+  border-left: 2px solid #e3854b;
+  border-right: 2px solid #e3854b;
+}
 
 /* ==========================================
    ADJACENT SIBLING SELECTOR CHALLENGES
@@ -86,11 +95,11 @@ body {
    - Give it a bold, slightly larger style
    Hint: Combine multiple selector types
 */
- 
-.article-content > main + p [
-   font-style: bold ;
-   font-size: 20px;
-]
+ .article-content > p:first-child  {
+   font-weight: bold;
+   font-size: 25px;
+ }
+
 /* ==========================================
    ADVANCED  (BONUS)
    ========================================== */
